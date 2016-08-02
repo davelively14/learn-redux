@@ -10,6 +10,7 @@ function mapStateToProps(state) {
   }
 }
 
+// Tgus us where we bind all of the actions to the DOM
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
