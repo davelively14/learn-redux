@@ -9,10 +9,12 @@ import rootReducer from './reducers/index'
 import comments from './data/comments'
 import posts from './data/posts'
 
-// Create an object for the default data
+// Create an object for the default data. Note, in ES6 you don't need to specify
+// the name of the value if it's the same name as the key. In other words, just
+// putting 'posts' is the same as putting 'posts: posts'.
 const defaultState = {
-  posts: posts,
-  comments: comments
+  posts,
+  comments
 }
 
 const store = createStore(rootReducer, defaultState)
