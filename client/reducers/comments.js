@@ -6,7 +6,6 @@ function postComments(state = [], action) {
         text: action.comment
       }]
     case 'REMOVE_COMMENT':
-      console.log("removing comment");
       return [
         ...state.slice(0, action.i), // from start to item to delete
         ...state.slice(action.i + 1) // from after deleted to end
