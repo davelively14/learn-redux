@@ -3,7 +3,7 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import { browserHistory } from 'react-router'
 
 // Import root reducer
-import rootReducer from './reducers/index'
+import rootReducer from './reducers/index.js'
 
 // Import data
 import comments from './data/comments'
